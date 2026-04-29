@@ -696,7 +696,7 @@ h2::before {
   top: 0;
   left: -60vw;
   width: 50vw;
-  height: 100vh;
+  height: 0;
   background: linear-gradient(90deg, transparent, rgba(141,198,63,0.2), rgba(255,255,255,0.12), transparent);
   pointer-events: none;
   z-index: 5;
@@ -1521,10 +1521,13 @@ h2::before {
       h1.querySelectorAll('.hero-letter').forEach(l => l.classList.add('in'));
     }, 600);
 
-    // Sweep across name
+    // Sweep across name — measure h1 at animation time so height tracks the name band
     const letterDelay = 600 + name.length * 60;
     setTimeout(() => {
       const sweep = document.getElementById('hero-sweep');
+      const rect = h1.getBoundingClientRect();
+      sweep.style.top = rect.top + 'px';
+      sweep.style.height = rect.height + 'px';
       sweep.style.transition = 'left 1s ease-in-out';
       sweep.style.left = '150%';
     }, letterDelay);
