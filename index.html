@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexander Petkov — Automation QA</title>
+<title>Alexander Petkov — Senior QA Automation Engineer</title>
 
 <!-- SEO -->
-<meta name="description" content="Automation QA Engineer with 10 years of experience building test infrastructure for sports betting and banking platforms. Specializes in .NET microservices, AI-driven test automation, and multi-agent orchestration systems.">
+<meta name="description" content="Senior QA Automation Engineer with 10 years of experience building test infrastructure for sports betting and banking platforms. Specializes in .NET microservices, AI-driven test automation, and multi-agent orchestration systems.">
 <meta name="author" content="Alexander Petkov">
-<meta name="keywords" content="Alexander Petkov, Automation QA, SDET, C#, .NET, Playwright, Kafka, Kubernetes, AI, Agentic Coding, Claude Code, Sofia Bulgaria">
+<meta name="keywords" content="Alexander Petkov, Senior QA Automation Engineer, SDET, C#, .NET, Playwright, Kafka, Kubernetes, AI, Agentic Coding, Claude Code, Sofia Bulgaria">
 <link rel="canonical" href="https://zandeto.github.io/cv/">
 
 <!-- Open Graph (LinkedIn, Slack, WhatsApp, Discord, Facebook) -->
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Alexander Petkov — CV">
-<meta property="og:title" content="Alexander Petkov — Automation QA Engineer">
+<meta property="og:title" content="Alexander Petkov — Senior QA Automation Engineer">
 <meta property="og:description" content="10 years building test infrastructure for sports betting and banking platforms. C# / .NET, Playwright, Kafka, Kubernetes, Agentic Coding.">
 <meta property="og:url" content="https://zandeto.github.io/cv/">
 <meta property="og:image" content="https://zandeto.github.io/cv/photo.jpg">
@@ -24,7 +24,7 @@
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Alexander Petkov — Automation QA Engineer">
+<meta name="twitter:title" content="Alexander Petkov — Senior QA Automation Engineer">
 <meta name="twitter:description" content="10 years building test infrastructure for sports betting and banking platforms. C# / .NET, Playwright, Kafka, Kubernetes, Agentic Coding.">
 <meta name="twitter:image" content="https://zandeto.github.io/cv/photo.jpg">
 
@@ -798,25 +798,81 @@ h2::before {
   #dot-nav button.active { width: 9px; height: 9px; }
 }
 
-/* Mobile: <768px */
+/* Mobile: <768px — tighten hero to fit one viewport, keep slide-deck scroll */
 @media (max-width: 767px) {
   section {
-    padding: clamp(2rem, 5vh, 3rem) clamp(1rem, 3vw, 1.5rem);
+    padding: 2rem 1.25rem;
   }
+
+  /* Hero: shrink everything to fit one screen */
+  #hero {
+    gap: 0.5rem;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+    letter-spacing: 2px !important;
+    line-height: 1.15;
+    word-break: break-word;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+  #hero-name { overflow: visible !important; }
+  .hero-letter { white-space: normal; }
+
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+    margin-top: 0.25rem;
+  }
+
   .hero-photo {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 0.25rem;
   }
+
+  .hero-divider { width: 140px !important; margin: 0.3rem 0; }
+
   .hero-contact {
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.15rem;
+    font-size: 0.72rem;
+    margin-top: 0.25rem;
   }
   .hero-contact .sep { display: none; }
-  .hero-highlights { gap: 0.3rem; }
+
+  .hero-profile {
+    font-size: 0.78rem;
+    line-height: 1.45;
+    margin-top: 0.4rem;
+    padding: 0 0.25rem;
+  }
+
+  .hero-highlights { gap: 0.25rem; margin-top: 0.35rem; }
+  .pill { font-size: 0.6rem; padding: 0.15rem 0.6rem; }
+
+  .hero-hobbies {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 0.9rem;
+    font-size: 0.65rem;
+    margin-top: 0.35rem;
+  }
+
+  .scroll-hint { margin-top: 0.5rem; font-size: 1.1rem; }
 
   .toolbar { top: 12px; right: 12px; }
   .toolbar__btn span { display: none; }
   .exp-card { padding: 1rem; }
+  .exp-card h3 { font-size: 1rem; padding-right: 1.75rem; }
+  .exp-role { padding-right: 1.75rem; }
+  .exp-chevron { font-size: 1.1rem; right: 0.9rem; }
 
   .skills-grid { grid-template-columns: 1fr; gap: 2rem; }
   .gauge-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1032,7 +1088,7 @@ h2::before {
   </div>
 
   <h1 id="hero-name" aria-label="Alexander Petkov">ALEXANDER PETKOV</h1>
-  <p class="hero-subtitle">Automation QA</p>
+  <p class="hero-subtitle">Senior QA Automation Engineer</p>
   <hr class="hero-divider">
 
   <div class="hero-contact mono">
@@ -1045,7 +1101,7 @@ h2::before {
     <a href="https://www.linkedin.com/in/alexander-petkov-99983127" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 
-  <p class="hero-profile">Automation QA with 10 years of experience building test infrastructure for sports betting and banking platforms. Specializes in .NET microservices, AI-driven test automation, and multi-agent orchestration systems.</p>
+  <p class="hero-profile">Senior QA Automation Engineer with 10 years of experience building test infrastructure for sports betting and banking platforms. Specializes in .NET microservices, AI-driven test automation, and multi-agent orchestration systems.</p>
 
   <div class="hero-highlights">
     <span class="pill">Highly organized</span>
@@ -1075,7 +1131,7 @@ h2::before {
     <div class="reveal">
       <div class="exp-card" role="button" tabindex="0" aria-expanded="false" aria-controls="panel-dk">
         <h3>DRAFTKINGS</h3>
-        <p class="exp-role">Automation QA <span class="mono">&middot; 01.09.2019 — present</span></p>
+        <p class="exp-role">Senior QA Automation Engineer <span class="mono">&middot; 01.09.2019 — present</span></p>
         <span class="exp-chevron" aria-hidden="true">&#8964;</span>
       </div>
       <div class="exp-panel" id="panel-dk" role="region">
@@ -1293,7 +1349,7 @@ h2::before {
 <div id="print-cv">
   <div class="p-header">
     <h1>ALEXANDER PETKOV</h1>
-    <p class="p-title">Automation QA</p>
+    <p class="p-title">Senior QA Automation Engineer</p>
     <p class="p-contact">
       Sofia, Bulgaria &middot;
       <a href="tel:+359876597666">+359 876 597 666</a> &middot;
@@ -1304,7 +1360,7 @@ h2::before {
 
   <div class="p-section">
     <h2>Profile</h2>
-    <p class="p-profile">Automation QA with 10 years of experience building test infrastructure for sports betting and banking platforms. Specializes in .NET microservices, AI-driven test automation, and multi-agent orchestration systems.</p>
+    <p class="p-profile">Senior QA Automation Engineer with 10 years of experience building test infrastructure for sports betting and banking platforms. Specializes in .NET microservices, AI-driven test automation, and multi-agent orchestration systems.</p>
     <p class="p-highlights">Highly organized · Goal-orientated · Effective communication &amp; interpersonal skills · Excellent eye for detail · Strong in multitasking · Independent, collaborative &amp; contributing team member · Patient &amp; consistent</p>
   </div>
 
@@ -1315,7 +1371,7 @@ h2::before {
         <h3>DRAFTKINGS</h3>
         <span class="p-dates">01.09.2019 — present</span>
       </div>
-      <p class="p-role">Automation QA</p>
+      <p class="p-role">Senior QA Automation Engineer</p>
       <ul>
         <li>Develop and extend a .NET 9 Minimal API test infrastructure service integrating 10+ backend services via clean architecture, railway-oriented programming, and Kafka event publishing</li>
         <li>Design a multi-agent AI orchestration framework (Claude Code plugin marketplace) automating the full test lifecycle — from Jira requirements through code generation, execution, and analysis</li>
