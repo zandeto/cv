@@ -692,13 +692,14 @@ h2::before {
   filter: blur(0);
 }
 .hero-sweep {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: -100%;
-  width: 80%;
-  height: 100%;
+  left: -60vw;
+  width: 50vw;
+  height: 100vh;
   background: linear-gradient(90deg, transparent, rgba(141,198,63,0.2), rgba(255,255,255,0.12), transparent);
   pointer-events: none;
+  z-index: 5;
 }
 
 .hero-photo {
@@ -1486,7 +1487,13 @@ h2::before {
   h1.innerHTML = name.split('').map((ch, i) => {
     if (ch === ' ') return '<span class="hero-letter" style="width:0.3em">&nbsp;</span>';
     return `<span class="hero-letter" style="transition-delay:${i * 60}ms">${ch}</span>`;
-  }).join('') + '<div class="hero-sweep" id="hero-sweep"></div>';
+  }).join('');
+
+  // Sweep lives on <body> (not inside h1) so it can span the whole viewport
+  const sweep = document.createElement('div');
+  sweep.className = 'hero-sweep';
+  sweep.id = 'hero-sweep';
+  document.body.appendChild(sweep);
 
   h1.style.position = 'relative';
   h1.style.overflow = 'hidden';
