@@ -798,6 +798,12 @@ h2::before {
   #dot-nav button.active { width: 9px; height: 9px; }
 }
 
+/* Short-height laptops — anchor hero to top instead of centering,
+   so overflow (if any) is scrollable rather than pushed off-screen */
+@media (max-height: 900px) {
+  #hero { justify-content: flex-start; padding-top: clamp(2rem, 5vh, 4rem); }
+}
+
 /* Mobile: <768px — tighten hero to fit one viewport, keep slide-deck scroll */
 @media (max-width: 767px) {
   section {
